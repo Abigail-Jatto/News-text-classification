@@ -50,7 +50,7 @@ All preprocessing is implemented as modular, reusable functions:
 | Text CNN | 91% | 0.91 |
 | BiLSTM | 92% | 0.92 |
 
-**Key finding:** Deep learning's advantage over well-tuned classical models is real but modest — approximately 3–4 percentage points at significantly greater computational cost and reduced interpretability. This finding matters: in production environments where inference speed, cost and explainability are constraints, a well-tuned LinearSVC may be the correct engineering choice even when a BiLSTM achieves marginally higher accuracy.
+**Key finding:** Deep learning's advantage over well-tuned classical models is significant at approximately 3–4 percentage points at significantly greater computational cost and reduced interpretability. This finding matters: in production environments where inference speed, cost and explainability are constraints, a well-tuned LinearSVC may be the correct engineering choice even when a BiLSTM achieves marginally higher accuracy.
 
 ---
 
