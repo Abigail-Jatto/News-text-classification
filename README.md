@@ -9,9 +9,9 @@ All preprocessing is implemented as modular, reusable functions:
 | `remove_stopwords()` | Removes Gensim stopword list |
 | `build_ngram_models()` | Fits bigram and trigram Phraser models on training data only |
 | `lemmatization()` | Reduces tokens to base form using spaCy, retaining nouns, adjectives, verbs and adverbs |
-| `preprocess_pipeline()` | Orchestrates full preprocessing sequence; fitted on train, applied to val and test to prevent data leakage |
+| `preprocess_pipeline()` | Full preprocessing sequence; fitted on train, applied to val and test to prevent data leakage |
 
-**Key design decision:** Bigram and trigram models are fitted exclusively on training data and applied to validation and test sets — preventing leakage of test distribution information into the feature engineering stage.
+**Key design decision:** Bigram and trigram models are fitted exclusively on training data and applied to validation and test sets, preventing leakage of test distribution information into the feature engineering stage.
 
 
 ## Models Built and Evaluated
